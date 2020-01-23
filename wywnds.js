@@ -5,6 +5,8 @@
 ^https://p\.du\.163\.com/readtime/info.json url reject
 ^https:\/\/p\.du\.163\.com\/gain\/readtime\/info\.json url script-response-body https://raw.githubusercontent.com/LTribeSkyx/Script/master/wywnds.js
 
+hostname = p.du.163.com,
+
 */
 
 var obj = JSON.parse($response.body);
