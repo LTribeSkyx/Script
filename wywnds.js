@@ -1,4 +1,5 @@
-// 微信公众号@LTribe
+// 微信公众号@QTribe
+//Quantumult X 脚本
 
 /*
 
@@ -9,9 +10,10 @@ hostname = p.du.163.com,
 
 */
 
-var obj = JSON.parse($response.body);
-obj.tradeEndTime = 4070957802000;
+var body = $response.body；
+var tribe = JSON.parse(body);
+tribe.tradeEndTime = 4070957802000;
 body = JSON.stringify(obj);
 $done({body});
 
-// From LTribe
+// From QTribe
