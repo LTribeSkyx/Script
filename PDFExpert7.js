@@ -8,11 +8,19 @@ hostname = license.pdfexpert.com,
 
 */  
 
-var body = $response.body;
-var tribe = JSON.parse(body);
+var tribe = JSON.parse($response.body);
 
-tribe = {"isEligibleForIntroPeriod":true,"originalTransactionId":"730000355000000","subscriptionExpirationDate":"01:01 01/01/2020","subscriptionState":"active","subscriptionReceiptId":"1559207500000","isPDFExpert6User":true,"subscriptionAutoRenewStatus":"autoRenewOff","isInGracePeriod":true};
-body = JSON.stringify(tribe);
-$done({body});
+tribe = {
+  "isEligibleForIntroPeriod":true,
+  "originalTransactionId":"730000355000000",
+  "subscriptionExpirationDate":"01:01 01/01/2020",
+  "subscriptionState":"active",
+  "subscriptionReceiptId":"1559207500000",
+  "isPDFExpert6User":true,
+  "subscriptionAutoRenewStatus":"autoRenewOff",
+  "isInGracePeriod":true
+};
+
+$done({body: JSON.stringify(tribe)});
 
 // From QTribe
