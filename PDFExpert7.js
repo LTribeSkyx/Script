@@ -1,4 +1,5 @@
-// 微信公众号@LTribe
+// 微信公众号@QTribe
+// Quantumult X 脚本
 
 /*
 
@@ -7,10 +8,11 @@ hostname = license.pdfexpert.com,
 
 */  
 
-var obj = JSON.parse($response.body);
+var body = $response.body;
+var tribe = JSON.parse(body);
 
-obj = {"isEligibleForIntroPeriod":true,"originalTransactionId":"730000355000000","subscriptionExpirationDate":"01:01 01/01/2020","subscriptionState":"active","subscriptionReceiptId":"1559207500000","isPDFExpert6User":true,"subscriptionAutoRenewStatus":"autoRenewOff","isInGracePeriod":true};
-body = JSON.stringify(obj);
+tribe = {"isEligibleForIntroPeriod":true,"originalTransactionId":"730000355000000","subscriptionExpirationDate":"01:01 01/01/2020","subscriptionState":"active","subscriptionReceiptId":"1559207500000","isPDFExpert6User":true,"subscriptionAutoRenewStatus":"autoRenewOff","isInGracePeriod":true};
+body = JSON.stringify(tribe);
 $done({body});
 
-// From LTribe
+// From QTribe
