@@ -1,5 +1,5 @@
 // 微信公众号@QTribe
-//Quantumult X 脚本
+// Quantumult X 脚本
 
 /*
 
