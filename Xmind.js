@@ -7,7 +7,7 @@ Thanks To@xiaozhuolao's membership data.
 
 [rewrite_local]
 # Xmind Unlock annual subscriptions （by LTribe）
-https?:\/\/.*\.xmind\..*\/_res\/(devices|user_sub_status|profile\/_xmind_.*\/) url script-response-body Xmind.js
+https?:\/\/.*\.xmind\..*\/_res\/(devices|user_sub_status|profile\/*) url script-response-body XMind.js
 
 [mitm]
 MITM = *.xmind.*,
@@ -16,7 +16,7 @@ MITM = *.xmind.*,
 
 const path1 = "/devices";
 const path2 = "/user_sub_status";
-const path3 = "/profile/_xmind_.*/";
+const path3 = "/profile/*";
 let obj = JSON.parse($response.body);
 
 if ($request.url.indexOf(path1) != -1){
@@ -27,7 +27,7 @@ if ($request.url.indexOf(path1) != -1){
  };
   
 if ($request.url.indexOf(path2) != -1){
-	obj = {
+    obj = {
     "_code": 200,
     "ios": {
     "status": "sub",
