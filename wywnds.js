@@ -13,8 +13,6 @@ hostname = p.du.163.com,
 
 */
 
-var body = $response.body;
-var tribe = JSON.parse(body);
-tribe.tradeEndTime = 4070957802000;
-body = JSON.stringify(tribe);
-$done({body});
+let obj = JSON.parse($response.body);
+obj.tradeEndTime = 4070957802000;
+$done({body: JSON.stringify(obj)});
