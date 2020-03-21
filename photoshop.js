@@ -1,5 +1,5 @@
 /*
-
+Quantumult X 脚本
 Unlock Photoshop for iPad & Ps Express
 
 By LTribe
