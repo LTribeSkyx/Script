@@ -7,7 +7,7 @@ Thanks To@xiaozhuolao's membership data.
 
 [rewrite_local]
 # Xmind Unlock annual subscriptions （by LTribe）
-https?:\/\/.*\.xmind\..*\/_res\/(devices|user_sub_status|profile\/_xmind_*\/) url script-response-body Xmind.js
+https?:\/\/.*\.xmind\..*\/_res\/(devices|user_sub_status|profile\/_xmind_.*\/) url script-response-body Xmind.js
 
 [mitm]
 MITM = *.xmind.*,
