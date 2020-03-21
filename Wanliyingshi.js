@@ -8,7 +8,7 @@ Quantumult X 脚本:万里影视解锁VIP无限时长
 
 [rewrite_local]
 # 解锁万里影视VIP无限时长 （by LTribe）
-^http?:\/\/.*\.arten.cn/login/login url script-response-body Wanliyingshi.js
+^http?:\/\/.*\.arten.cn\/login\/login url script-response-body Wanliyingshi.js
 
 [mitm]
 hostname = *.arten.cn,
