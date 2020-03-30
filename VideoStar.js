@@ -55,6 +55,6 @@ obj.in_app = [{
    
 obj.activeSubs = {
      "OneYearUnlockVS": "4102445330000"
-   }
+   };
    
 $done({body: JSON.stringify(obj)});
