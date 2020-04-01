@@ -14,9 +14,10 @@ hostname = www.tan8.com,
 */
 
 let obj = JSON.parse($response.body);
-var vid[] = obj.data.result.videoVid;
-Delete obj.data.result.alertDic;
+var vid = obj.data.result.videoVid;
+delete obj.data.result.alertDic;
+delete obj.data.result.buyLessonJumpEvent;
 obj.data.result.statusCode = "1";
 obj.data.result.message = "Success";
-obj.data.result.videoUrl = "http:\/\/videooss.tan8.com\/tan8video\/" + vid[0] + vid[1] + "\/" +vid[-2] + vid[-1] +"\/" + vid + "\/" + vid + "_2.mp4";
+obj.data.result.videoUrl = "http:\/\/videooss.tan8.com\/tan8video\/" + vid[0] + vid[1] + "\/" + vid[30] + vid[31] +"\/" + vid + "\/" + vid + "_2.mp4";
 $done({body: JSON.stringify(obj)});
