@@ -2,14 +2,13 @@
 
 Quantumult X 脚本:
 tanqinba Unlock（by LTribe）
-tanqinba Download Link : http://t.cn/A6zhp3Bm
 
 [rewrite_local]
-# tanqinba Unlock （by LTribe）
-^http:\/\/www\.tan8\.com\/codeindex\.php\?d\=common\&c* url script-response-body tanqinba.js
+# 弹琴吧解锁付费课程 （by LTribe）
+^http?:\/\/www\.tan8\.com\/codeindex\.php\?d\=common\&c.* url script-response-body jiaoben/tanqinba.js
 
 [mitm]
-hostname = www.tan8.com,
+hostname = *.tan8.com,
 
 */
 
