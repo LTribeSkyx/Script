@@ -5,7 +5,7 @@ Quantumult X 脚本:
 
 [rewrite_local]
 # 弹琴吧解锁付费课程（注：钢琴，电子琴，小提琴会员谱库未能解锁） （by LTribe）
-^http?:\/\/www\.tan8\.com\/codeindex\.php\?d\=(common\&c*|tan8\&c\=yuepu\&m*|tan8\&c\=myself\&m*) url script-response-body jiaoben/tanqinba.js
+^http?:\/\/www\.tan8\.com\/codeindex\.php\?d\=(common\&c*|tan8\&c\=yuepu\&m*|tan8\&c\=myself\&m*) url script-response-body tanqinba.js
 
 [mitm]
 hostname = *.tan8.com,
