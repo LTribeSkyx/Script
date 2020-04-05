@@ -2,7 +2,6 @@
 
 Quantumult X 脚本:
 不背单词 unlock （by LTribe）
-Download Link : http://t.cn/A6PaJVrT
 
 [rewrite_local]
 # 不背单词 （by LTribe）
@@ -12,9 +11,10 @@ Download Link : http://t.cn/A6PaJVrT
 hostname = sapi.beingfine.cn,
 
 */
-
-let obj = JSON.parse($response.body);
-obj.data_body[\"user_info\"][\"privileges\"] = {\"wordroot\":{\"expire_date\":9999999999000,\"user_type\":2,\"granted\":1};
-obj.data_body[\"user_info\"][\"collins\"] = {\"expire_date\":9999999999000,\"collins_user_type\":2,\"granted\":1};
- 
+let body = $response.body;
+let obj = JSON.parse(body);
+let ltr = JSON.parse(obj.data_body);
+ltr.privileges.wordroot = {"expire_date":9999999999000,"user_type":2,"granted":1};
+ltr.privileges.collins = {"expire_date":9999999999000,"collins_user_type":2,"granted":1};
+obj.data_body = JSON.stringify(ltr);
 $done({body: JSON.stringify(obj)});
