@@ -11,6 +11,7 @@ Quantumult X 脚本:
 hostname = sapi.beingfine.cn,
 
 */
+
 let body = $response.body;
 let obj = JSON.parse(body);
 let ltr = JSON.parse(obj.data_body);
