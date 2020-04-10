@@ -6,15 +6,13 @@ Quantumult X 脚本:
 
 [rewrite_local]
 # 泼辣修图解锁会员 （by LTribe）
-^https?:\/\/api\.polaxiong\.com\/v/d\/payments\/appleiap\/receipts\/confirmation$ url script-response-body polaris.js
-^https?:\/\/api\.polarr\.co\/v\d\/payments\/appleiap\/receipts\/confirmation$ url script-response-body polaris.js
+^https?:\/\/api\.(polaxiong\.com|polarr\.co)\/v\d\/payments\/appleiap\/receipts\/confirmation$ url script-response-body polaris.js
 
 [mitm]
 hostname = api.polaxiong.com, api.polarr.co, 
 
 */
 
-//$response.status = 200;
 let obj = JSON.parse($response.body);
 obj = {
   "app":"PPE",
