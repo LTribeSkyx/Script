@@ -8,7 +8,7 @@ Download link : https://t.cn/A6Z1ysfS
 不背单词[Http Catcher]网球规则下载链接：https://t.cn/AiFmr7db
 
 [三选一]:
-1.将该js文件下载保存[qx-script]本地写法：
+1.将该js文件下载保存到[qx-script]本地写法：
 [rewrite_local]
 # 不背单词 （by LTribe）
 ^https?:\/\/sapi\.beingfine\.cn\/v\d\/report\/launch* url script-response-body bubeidanci.js
@@ -37,3 +37,4 @@ obj.data_body = JSON.stringify(ltr);
 $done({body: JSON.stringify(obj)});
 
 // Updated April 11,2020
+// 仅供个人参考学习交流，勿用于其它...
