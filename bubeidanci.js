@@ -5,6 +5,7 @@ Quantumult X 脚本:
 Download link : https://t.cn/A6Z1ysfS
 
 说明：该脚本qx域名解密有问题，在iPad上暂时无法使用，iPhone上勉强能用.
+不背单词[Http Catcher]网球规则下载链接：https://t.cn/AiFmr7db
 
 [三选一]:
 1.将该js文件下载保存[qx-script]本地写法：
@@ -34,3 +35,5 @@ ltr.privileges.wordroot = {"expire_date":4102429976000,"user_type":2,"granted":1
 ltr.privileges.collins = {"expire_date":4102429976000,"collins_user_type":2,"granted":1};
 obj.data_body = JSON.stringify(ltr);
 $done({body: JSON.stringify(obj)});
+
+// Updated April 11,2020
