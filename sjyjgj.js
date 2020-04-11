@@ -15,7 +15,7 @@ hostname = api.591master.com,
 let obj = JSON.parse($response.body);
 obj.data.isVip = true;
 obj.data.expireTime = "4102479403";
-ob.data.expExpireTime = "4102479403";
+obj.data.expExpireTime = "4102479403";
 obj.data.lastBuyTime = "4102479403";
   
 $done({body: JSON.stringify(obj)});
