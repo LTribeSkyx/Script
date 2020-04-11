@@ -10,7 +10,7 @@ Thanks To@xiaozhuolao's membership data.
 https?:\/\/.*\.xmind\..*\/_res\/(devices|user_sub_status|profile\/) url script-response-body XMind.js
 
 [mitm]
-MITM = *.xmind.*,
+hostname = *.xmind.*,
 
 */
 
@@ -45,3 +45,6 @@ if ($request.url.indexOf(path3) != -1){
   };
   
 $done({body: JSON.stringify(obj)});
+
+// Updated April 11,2020
+// 仅供个人参考学习交流，勿用于其它...
