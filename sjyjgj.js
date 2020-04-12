@@ -2,6 +2,7 @@
 
 Quantumult X 脚本:
 [手机硬件管家] unlock （by LTribe）
+Download Link : https://t.cn/A6wG3i6W
 
 [rewrite_local]
 # 手机硬件管家终身会员（恢复购买后可禁用该重写,by LTribe）
