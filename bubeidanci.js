@@ -4,7 +4,7 @@ Quantumult X 脚本:
 不背单词 unlock （by LTribe）
 Download link : https://t.cn/A6Z1ysfS
 
-说明：该脚本qx域名解密有问题，在iPad上暂时无法使用，iPhone上勉强能用.
+说明：该脚本qx域名解密有问题，iPhone上能用,但在iPad上暂时无法使用，具体情况自行测试.
 不背单词[Http Catcher]网球规则下载链接：https://t.cn/AiFmr7db
 
 [三选一]:
