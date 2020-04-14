@@ -1,10 +1,10 @@
 /*
 
 Quantumult X 脚本
-unlock Shapr:3D PRO
+unlock Shapr:3D PRO(By LTribe)
 
 [rewrite_local]
-# unlock Shapr3D
+# unlock Shapr3D(By LTribe)
 ^https?:\/\/prod\.api\.shapr3d\.com\/user-management\/profile-with-device url script-response-body Shapr3D.js
 
 [mitm]
