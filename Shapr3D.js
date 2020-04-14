@@ -8,7 +8,7 @@ unlock Shapr:3D PRO
 ^https?:\/\/prod\.api\.shapr3d\.com\/user-management\/profile-with-device url script-response-body Shapr3D.js
 
 [mitm]
-hostname = prod.api.shapr3d.com
+hostname = prod.api.shapr3d.com,
 
 */
 
