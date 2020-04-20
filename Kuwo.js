@@ -5,7 +5,7 @@ KuWo music unlock Svip
 [rewrite_local]
 # 酷我音乐解锁SVIP
 # 对下载失败的音乐：先听该音乐-音乐缓存完毕之后点下载，这时下载里会显示下载失败，重启酷我，便会显示下载完成~
-^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?uid\=\d+ url 302 http://musicpay.kuwo.cn/music.pay?uid=1
+^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?uid\=\d+ url 302 http://musicpay.kuwo.cn/music.pay?uid=2
 ^https?:\/\/vip1\.kuwo\.cn\/(vip\/v\d\/user\/vip|vip\/spi/mservice) url script-response-body Kuwo.js
 
 [mitm]
