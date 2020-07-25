@@ -7,44 +7,25 @@ Thanks To@xiaozhuolao's membership data.
 
 [rewrite_local]
 # Xmind Unlock annual subscriptions （by LTribe）
-https?:\/\/.*\.xmind\..*\/_res\/(devices|user_sub_status|profile\/) url script-response-body XMind.js
+https?:\/\/.*\.xmind\..*\/_res\/devices url script-response-body XMind.js
 
 [mitm]
 hostname = *.xmind.*,
 
 */
 
-const path1 = "/devices";
-const path2 = "/user_sub_status";
-const path3 = "/profile/";
 let obj = JSON.parse($response.body);
 
-if ($request.url.indexOf(path1) != -1){
-    obj.license = {
+obj = {
+  "raw_data": "S0MY6Wu5wpkW52RE5XmMkSMfTBvnytTwIJODrtVDjnA0axrORbnv9gh1RC4W3/ejTfQhNBb7CVxxpbYnBBk2tHc4gAODhsuGpHkltYNL/P5dfORSpdbiNkAZr5aBBbHS/dNlaYjLYyBkq9Ohfe0QS9PeXOWLbDdNA6kqidLJysw=",
+  "license": {
     "status": "sub",
-    "expireTime": 4102494057000
-  };
- };
-  
-if ($request.url.indexOf(path2) != -1){
-    obj = {
-    "_code": 200,
-    "ios": {
-    "status": "sub",
-    "expireTime": 4102494057000
-  }};
- };
-
-if ($request.url.indexOf(path3) != -1){
-  obj.sub = {
-    "ios": {
-      "status": "sub",
-      "expireTime": 4102494057000,
-      "buyable": 0
-    }};
-  };
+    "expireTime": 9999999999999
+  },
+  "_code": 200
+}
   
 $done({body: JSON.stringify(obj)});
 
-// Updated April 11,2020
+// Updated 20200715
 // 仅供个人参考学习交流，勿用于其它...
