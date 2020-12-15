@@ -1,10 +1,13 @@
 /*
+
 Quantumult X 脚本:
+
 [rewrite_local]
 # Scanner Pro 的 Pro 订阅 （by LTribe）
-^https?:\/\/license\.pdfexpert\.com\/api\/2\.0\/scanner\/subscription\/refresh url script-response-body 1Blocker.js
+^https?:\/\/license\.pdfexpert\.com\/api\/2\.0\/scanner\/subscription\/refresh url script-response-body https://raw.githubusercontent.com/LTribeSkyx/Script/master/ScannerPro.js
+
 [mitm]
-hostname = api.revenuecat.com,
+hostname = license.pdfexpert.com,
 */
 
 let obj = JSON.parse($response.body);
