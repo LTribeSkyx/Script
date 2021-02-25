@@ -4,7 +4,7 @@ Quantumult X 脚本:
 
 [rewrite_local]
 # Duet Display Unlock Pro （by LTribe）
-^https?:\/\/rdp\.duetdisplay\.com\/v\d\/users\/validateReceipt url script-response-body DuetPro.js
+^https?:\/\/rdp\.duetdisplay\.com\/v\d\/users\/validateReceipt url script-response-body https://raw.githubusercontent.com/LTribeSkyx/Script/master/DuetPro.js
 
 [mitm]
 hostname = rdp.duetdisplay.com,
